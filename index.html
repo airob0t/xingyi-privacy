@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Privacy Policy – Star Translate Extension</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0; padding: 2.5rem 1.5rem;
+      background: #f7f8fa; color: #1c1f24;
+    }
+    main {
+      max-width: 820px; margin: 0 auto; background: #fff;
+      border-radius: 16px; padding: 2.5rem 3rem;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+    }
+    h1 { margin-top: 0; font-size: 2rem; }
+    h2 { margin-top: 2rem; font-size: 1.3rem; }
+    ul { padding-left: 1.25rem; }
+    a { color: #3b82f6; }
+    @media (max-width: 640px) {
+      body { padding: 1.5rem; }
+      main { padding: 1.75rem; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p>Last updated: December 4, 2025</p>
+
+  <p>Thank you for using the Star Translate Chrome extension (“Extension”, “we”, “our”). This Privacy Policy explains how we handle information when you use our real-time voice translation features.</p>
+
+  <h2>1. Information We Collect</h2>
+  <ul>
+    <li><strong>Audio from the active tab:</strong> With your consent, we temporarily capture the audio stream of the tab you choose in order to perform live translation. Audio is sent through an encrypted WebSocket connection to the translation server you configure. We do not store this audio after the session ends.</li>
+    <li><strong>Translation settings:</strong> Source language, target language, selected voice, and device/machine ID are stored locally via <code>chrome.storage</code> so the Extension can remember your preferences.</li>
+    <li><strong>Status and diagnostic logs:</strong> We display transient status messages (e.g., “connecting”, “translation active”) and basic error logs inside the Extension UI to help you understand the session state. These logs are not transmitted to us.</li>
+  </ul>
+
+  <h2>2. How We Use the Information</h2>
+  <ul>
+    <li>To capture audio from the active tab solely for the purpose of translating it in real time.</li>
+    <li>To stream the captured audio to the translation service you select and receive the translated audio/text back.</li>
+    <li>To remember your preferred languages, voice options, and device ID locally for convenience.</li>
+    <li>To display live status updates and troubleshooting information within the Extension.</li>
+  </ul>
+
+  <h2>3. Data Sharing and Storage</h2>
+  <ul>
+    <li>We do not sell, rent, or otherwise share your information with advertising networks or unrelated third parties.</li>
+    <li>Audio data is transmitted directly between your browser and the translation server endpoint you configure. You are responsible for ensuring that endpoint complies with your data-handling requirements.</li>
+    <li>No continuous background collection occurs; audio capture begins only when you actively start a translation session and stops when you end it.</li>
+  </ul>
+
+  <h2>4. Retention</h2>
+  <p>We do not retain audio data or translation results after a session ends. Local preference data (languages, voice, device ID) remains on your device until you delete or reset it via Chrome’s extension data controls.</p>
+
+  <h2>5. User Controls</h2>
+  <ul>
+    <li>You initiate and stop tab audio capture at any time using the Start/Stop buttons.</li>
+    <li>You can clear stored preferences by removing the Extension’s site data or uninstalling the Extension.</li>
+    <li>You may disable the Extension or revoke its <em>tabCapture</em>/<em>offscreen</em>/<em>storage</em> permissions via Chrome’s extension settings, although doing so will prevent core functionality.</li>
+  </ul>
+
+  <h2>6. Security</h2>
+  <p>Audio is transmitted over secure WebSocket (wss) connections when available. We rely on Chrome’s extension sandbox, permission model, and HTTPS requirements for GitHub Pages hosting to protect your data. Nevertheless, no method of transmission is 100% secure; use caution when connecting to third-party translation servers.</p>
+
+  <h2>7. Children’s Privacy</h2>
+  <p>The Extension is not directed to children under 13, and we do not knowingly collect personal information from children. If you believe we have inadvertently collected such data, please contact us so we can delete it.</p>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy to reflect technical or legal changes. We will update the “Last updated” date above when revisions are made. Continued use of the Extension after changes constitutes acceptance of the revised policy.</p>
+
+  <h2>9. Contact</h2>
+  <p>If you have any questions about this Privacy Policy or our data practices, please contact us at <a href="mailto:support@xingyi.example.com">support@xingyi.example.com</a>.</p>
+</main>
+</body>
+</html>
